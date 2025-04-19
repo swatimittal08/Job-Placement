@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">JobPlacement</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#jobs">Jobs</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Job Application Form</h2>
+      <form id="applicationForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="tel" id="contact" name="contact" required />
+        </div>
+
+        <div class="form-group">
+          <label for="college">College:</label>
+          <input type="text" id="college" name="college" required />
+        </div>
+
+        <div class="form-group">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" name="branch" required />
+        </div>
+
+        <div class="form-group">
+          <label for="university">University:</label>
+          <input type="text" id="university" name="university" required />
+        </div>
+
+        <div class="form-group">
+          <label for="city">Current City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+
+        <div class="form-group">
+          <label for="domain">Profile:</label>
+          <select id="domain" name="domain" required>
+            <option value="">Select Profile</option>
+            <option value="software">Software Engineer</option>
+            <option value="software">Frontend Developer</option>
+            <option value="software">Backend Developer</option>
+            <option value="software">React Developer</option>
+            <option value="software">Java Developer</option>
+            <option value="software">Python Developer</option>
+            <option value="software">Dot Net Developer</option>
+            <option value="software">Ruby Developer</option>
+            <option value="software">Php Developer</option>
+            <option value="software">HTML Developer</option>
+            <option value="software">UI Developer</option>
+            <option value="software">Django Developer</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 JobPlacement. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
